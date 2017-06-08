@@ -1,0 +1,23 @@
+{
+  "name": "StorageFile",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "url": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
