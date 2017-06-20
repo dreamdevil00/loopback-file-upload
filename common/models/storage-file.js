@@ -5,7 +5,7 @@ var CONTAINER_URL = '/api/containers/';
 module.exports = function(StorageFile) {
   StorageFile.upload = function(ctx, options, cb) {
     options = options || {};
-    // 首先创建好目录 /server/storage/common
+    // Firstly, you must create folder  /server/storage/common
     ctx.req.params.container = 'common';
     /**
      * ctx.req    express request object
@@ -19,7 +19,7 @@ module.exports = function(StorageFile) {
             message: err.message,
           });
         } else {
-          // 此处 “file” 应当与表单中的 field name 相同
+          // The 'file'below should be the same as field name in the form
           var fileInfoArr = fileObj.files.file;
           var objs = [];
           fileInfoArr.forEach(function(item) {
