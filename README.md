@@ -1,16 +1,19 @@
 
+# Loopback-File-Upload
 
-简介：
-  完成的功能：
-    通过表单上传文件到服务器
+A simple demo shows how to upload a file/files to a web server by submitting a form.
 
-  使用的库：
-    loopback、loopback-component-storage
-  安装：
-    在项目根目录下执行
-      npm install
-    
-    依赖安装完毕后，在项目根目录下执行
-      node .
+It users [loopback](http://loopback.io/), which is a powerful library based on express
+and [loopback-component-storage](http://loopback.io/doc/en/lb3/Storage-component.html) which is a upload component
 
-    服务器运行在端口 3000
+
+### To install dependencies
+    npm install
+
+### Node versions
+    NodeJS 6.* or higher
+
+### To run
+Just run node . in the root of the project, and you can go to
+[http://localhost:3000](http://localhost:3000) to test this demo.
+
